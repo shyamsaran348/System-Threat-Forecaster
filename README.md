@@ -12,6 +12,25 @@
 
 ---
 
+## 📊 Dataset
+
+The project uses a subset of the **Microsoft Malware Prediction** dataset, focusing on system telemetry to predict infection probability.
+
+*   **Source**: Microsoft / Kaggle
+*   **Train Set**: 65,535 samples
+*   **Test Set**: 10,000 samples
+*   **Features**: 82 columns describing the machine's configuration (e.g., OS version, antivirus state, hardware specs).
+*   **Target**: `target` (Binary: 0 = Clean, 1 = Infected)
+
+**Key Features:**
+*   `EngineVersion`, `AppVersion`, `AvSigVersion`: Defender state.
+*   `RtpStateBitfield`: Real-time protection status.
+*   `IsSxsPassiveMode`: Passive mode status.
+*   `AVProductStatesIdentifier`: Antivirus product ID.
+*   `AVProductsInstalled`: Number of AV products.
+
+---
+
 ## 🧠 Machine Learning Architecture
 
 The core of the system is an ensemble of models trained on a large dataset of system telemetry.

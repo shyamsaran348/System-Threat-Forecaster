@@ -2,7 +2,7 @@
 __pycache__/
 *.pkl
 *.joblib
-data/raw/*
+# data/raw/*
 data/processed/*
 models/*
 outputs/
